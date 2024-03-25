@@ -1,13 +1,21 @@
 p {
     font-size: 25px;
-    color: violet;
+    color: rgb(41, 3, 102);
 }
 
 .header2 {
     color: blueviolet;
+    text-align: left !important;
 }
  
-#listas {
-    text-align: center !important; /* especificidad important (la modificación será aplicada por sobre otras
+.centered {
+    text-align: center !important;
+}
+
+.right {
+    text-align: right !important;
+}
+#listas{
+    text-align: left !important; /* especificidad important (la modificación será aplicada por sobre otras
     modificaciones) */
 }

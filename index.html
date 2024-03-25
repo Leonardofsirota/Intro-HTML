@@ -8,27 +8,35 @@
     <!-- incorporando css en head -->
     <style> 
         h2 {
-            color: blue; 
+            color: rgb(86, 9, 185); 
         }
     </style> 
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <h1 style="color: red;">Q onda perri?</h1> <!-- incorporando css en linea -->
-    <video width="320" height="240" controls>
-        <source src="./assets/img/peanutbutter.mp4" type="video/mp4">
-    </video>
-    <h2 class="header2">It's peanut butter jelly time!!</h2> <!-- incorporando css: selector class --> 
-    <p> Pinchar la imagen o el link de abajo te lleva a google</p>
-    <a href="https://www.google.com/" target="_blank">Ir a google</a>
-    <a href="https://www.google.com/" target= "_blank"><img src="./assets/img/descarga.png" alt="Imagen de html"></a>
+    <h1 style="color: black;">Bienvenidos a mi sitio web!</h1> <!-- incorporando css en linea -->
+        <video  controls>
+                <source src="./assets/img/peanutbutter.mp4" type="video/mp4">
+        </video>
+        <h2 class="header2">It's peanut butter jelly time!!</h2> <!-- incorporando css: selector class -->
+        <p> Pinchar la imagen o el link de abajo te lleva a google</p>
+        <a href="https://www.google.com/" target="_blank">Ir a google</a>
+        <a href="https://www.google.com/" target= "_blank"><img src="./assets/img/descarga.png" alt="Imagen de html"></a>
+    
+
 <h3 id="listas">Siguen las listas:</h3>
+
+<section class="padre" style="width: 100%;display:flex;">
+<div style="width: 50%;">
 <p>Lista sin orden de links</p>
 <ul>
     <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
     <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
     <li><a href="https://mail.google.com/" target="_blank">Gmail</a></li>
 </ul>
+</div>
+<div style="width: 50%;">
 <p>Lista ordenada de días</p>
 <ol>
     <li>Lunes</li>
@@ -39,6 +47,7 @@
     <li>Sábado</li>
     <li>Domingo</li>
 </ol>
+</div>
 <table border="1">
     <tr>
         <th>Alumno</th>
@@ -49,8 +58,12 @@
         <td>4</td>
     </tr>
 </table>
+</section>
 
 <!-- para agregar despues: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.141692548943!2d-58.84996412591235!3d-27.46484781649695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456cb759536285%3A0x9405d9e6bbb5b145!2sCostanera%20Corrientes!5e0!3m2!1ses-419!2sar!4v1710287893011!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+<footer class="centered">
+    <a href="section2.html" target="_self">siguiente sección</a>
+</footer>
 </body>
 </html>
 
