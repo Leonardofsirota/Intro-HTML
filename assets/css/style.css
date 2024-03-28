@@ -12,6 +12,15 @@ p {
     text-align: center !important;
 }
 
+.parrafo {
+    font-family: Arial, sans-serif;
+    font-size: medium;
+}
+
+.link {
+    color: blanchedalmond;
+}
+
 .right {
     text-align: right !important;
 }
