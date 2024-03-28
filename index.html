@@ -1,68 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!----------- head del sitio ----------->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi sitio web</title>
     <link rel="icon" href="./assets/img/descarga.ico" type="image/x-icon">
-    <!-- incorporando css en head -->
     <style> 
+        h1 {
+            color: black;
+        }
         h2 {
-            color: rgb(86, 9, 185); 
+            color: rgb(9, 29, 139); 
+            
         }
     </style> 
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <h1 style="color: black;">Bienvenidos a mi sitio web!</h1> <!-- incorporando css en linea -->
-        <video  controls>
-                <source src="./assets/img/peanutbutter.mp4" type="video/mp4">
-        </video>
-        <h2 class="header2">It's peanut butter jelly time!!</h2> <!-- incorporando css: selector class -->
-        <p> Pinchar la imagen o el link de abajo te lleva a google</p>
-        <a href="https://www.google.com/" target="_blank">Ir a google</a>
-        <a href="https://www.google.com/" target= "_blank"><img src="./assets/img/descarga.png" alt="Imagen de html"></a>
+<!----------- cuerpo del sitio ----------->
+<body style="background-color: rgb(127, 132, 194);">
+
+    <!------------ sección superior ------------>
+    <main>
+        <section>
+            <!---- bienvenida ---->
+            <div>
+                <a name="bienvenida"><h1 style="text-align: center;">Bienvenidos a mi sitio web!</h1></a>
+                <p style="text-align: center;">Sitio web de Leonardo Fleitas Sirota</p>
+            </div>
+            
+            <div>
+                <h2 style="text-align: center;">La vida del programador</h2> 
+            </div>
+            <!---- video ---->
+            <div style="position: relative; left:35%;">
+                
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/a3BK2oF3vHA" title="🔥COMO Es la VIDA De Un Programador Junior SIN Experiencia en 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>              
+            </div>
+        </section>
+    </main>
+
+    <!------------ sección inferior ------------>
+    <section class="padre" style="width: 100%; display:inline-flex; background-color: rgb(113, 166, 184);">
     
+        <div style="width: 33%;">
+            
+            <!---- links  ---->
+            <p>Lista de links</p>
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UCWeGrnhxKD2jkHXvkK4uJIw" target="_blank">Youtube</a></li>
+                <li><a href="https://www.instagram.com/leofsirota/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/kal.tzimisce/" target="_blank">Facebook</a></li>
+                <li><a href="https://github.com/Leonardofsirota" target="_blank">GitHub</a></li>
+                
+            </ul>
+        </div>
 
-<h3 id="listas">Siguen las listas:</h3>
+        <div style="width: 34%;">
+            <p>Horarios disponibles</p>
+            <ol>
+                <li>Lunes</li>
+                    <ul>
+                        <li><strong>8 a 12hs</strong></li>
+                        <li><strong>19 a 22hs</strong></li>
+                    </ul>
+                <li>Martes</li>
+                <ul>
+                    <li><strong>No disponible</strong></li>             
+                </ul>
+                <li>Miércoles</li>
+                <ul>
+                    <li><strong>8 a 12hs</strong></li>
+                    <li><strong>19 a 22hs</strong></li>
+                </ul>
+                <li>Jueves</li>
+                    <ul>
+                        <li><strong>No disponible</strong></li>             
+                    </ul>
+                <li>Viernes</li>
+                    <ul>
+                        <li><strong>8 a 12hs</strong></li>            
+                    </ul>
+            </ol>
+        </div>
 
-<section class="padre" style="width: 100%;display:flex;">
-<div style="width: 50%;">
-<p>Lista sin orden de links</p>
-<ul>
-    <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
-    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-    <li><a href="https://mail.google.com/" target="_blank">Gmail</a></li>
-</ul>
-</div>
-<div style="width: 50%;">
-<p>Lista ordenada de días</p>
-<ol>
-    <li>Lunes</li>
-    <li>Martes</li>
-    <li>Miércoles</li>
-    <li>Jueves</li>
-    <li>Viernes</li>
-    <li>Sábado</li>
-    <li>Domingo</li>
-</ol>
-</div>
-<table border="1">
-    <tr>
-        <th>Alumno</th>
-        <th>Presente</th>
-    </tr>
-    <tr>
-        <td>Leo</td>
-        <td>4</td>
-    </tr>
-</table>
-</section>
+        <div style="width: 33%; position: relative; margin-top: 5%; margin-left: 2%;">
+            <table border="1">
+                <tr>
+                    <th>Lenguaje/Framework</th>
+                    <th>Puntaje</th>                   
+                </tr>
+                <tr class="centered">
+                    <td>C</td>
+                    <td>6</td>
+                </tr>
+                <tr class="centered">
+                    <td>Java</td>
+                    <td>6</td>
+                </tr>
+                <tr class="centered">
+                    <td>HTML</td>
+                    <td>5</td>
+                </tr>
+                <tr class="centered">
+                    <td>CSS</td>
+                    <td>4</td>
+                </tr>
+                <tr class="centered">
+                    <td>Bootstrap</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>     
+    </section>
 
-<!-- para agregar despues: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.141692548943!2d-58.84996412591235!3d-27.46484781649695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456cb759536285%3A0x9405d9e6bbb5b145!2sCostanera%20Corrientes!5e0!3m2!1ses-419!2sar!4v1710287893011!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-<footer class="centered">
+<!----------- pie del sitio ----------->
+<footer style="text-align: center;">
+
+    <div>
+    <a href="#bienvenida">Volver al principio</a>
+    </div>
+
+    <div>
     <a href="section2.html" target="_self">siguiente sección</a>
+    </div>
+
 </footer>
 </body>
 </html>
